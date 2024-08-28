@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charest="utf-8">
+        <title>Shizu Portfolio - CONTACT</title>
+        <meta name="description" content="WebデザイナーShizuのポートフォリオ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <h1><a href="index.html"><img class="logo" src="images/header_logo.png" alt="ポートフォリオ ホーム"></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="work.html">WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#"><img src="images/sns_btn_x.png" alt="X"></a></li>
+                    <li><a href="#"><img src="images/sns_btn_ig.png" alt="Instagram"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="title-wrapper">
+                <h2 class="page-title">お問い合わせ</h2>
+                <img src="images/contact_logo.png">
+            </div>
+            <img src="images/bg-cloud.png">
+        </section>
+
+
+
+            <div class="contact-page">
+                <p>お仕事のご依頼・ご相談・質問等ございましたら、こちらのフォームよりお願いいたします。</p>
+            <form action="">
+                <table class="contact-table">
+                    <tr>
+                        <th class="contact-item">名前</th>
+                        <td class="contact-body">
+                            <input type="text" name="名前" class="form-text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="contact-item">お問い合わせ内容</th>
+                        <td class="contact-body">
+                            <label class="contact-q">
+                                <input type="radio" name="問い合わせ内容">
+                                <span class="contact-q-txt">仕事の依頼</span>
+                            </label>
+                            <label class="contact-q">
+                                <input type="radio" name="問い合わせ内容">
+                                <span class="contact-q-txt">相談</span>
+                            </label>
+                            <label class="contact-q">
+                                <input type="radio" name="問い合わせ内容">
+                                <span class="contact-q-txt">質問</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="contact-item">メールアドレス</th>
+                        <td class="contact-body">
+                            <input type="email" name="メールアドレス" class="form-text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="contact-item">メッセージをお願いします</th>
+                        <td class="contact-body">
+                            <textarea name="お問い合わせ" class="form-textarea"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input class="contact-submit" type="submit" value="送信">
+            </form>
+            </div><!-- /.contact -->
+
+
+        <footer>
+            <p class="copyright"><small>&copy; 2024 Shizu Portfolio</small></p>
+        </footer><!-- /.footer -->
+
+    </body>
+</html>
