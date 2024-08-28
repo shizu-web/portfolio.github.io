@@ -1,0 +1,614 @@
+@charset "UTF-8" ;
+
+/* 共通部分 ---------------------------------------*/
+html {
+    font-size: 100%
+}
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro M3", sana-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%
+}
+
+/* HEADER ---------------------------------------*/
+.page-header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: #fff;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    height: 80px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    margin-left: 200px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 18px;
+    text-transform: uppercase; /*大文字*/
+    margin: 1em;
+    margin-right: 200px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a{
+    color: #432;
+}
+
+.main-nav a:hover {
+    color: #ff9900;
+}
+
+.main-nav img {
+    width: 30px;
+}
+
+
+/* メイン ---------------------------------------*/
+.top-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #afdde5;
+}
+
+.title-wrapper {
+    height: 250px;
+    padding-top: 50px;
+    background-color: #AFDDE5;
+}
+
+.page-title {
+    font-size: 50px;
+    color: #fff;
+}
+/* WORK ---------------------------------------*/
+.work {
+    height: 850px;
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+
+.work h2 {
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.work ul {
+    display: flex;
+    justify-content: center;
+}
+
+.work_menu li {
+    list-style: none;
+    width: 25%;
+    padding: 50px 40px 50px 40px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.work_menu li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.work_menu img{
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.work_menu img:hover{
+    transform: scale(1.2) rotate(9deg);
+    transition-duration: 0.5s;
+}
+
+.button12 {
+    background-color: #fff;
+    border: solid 2px #ff9900;
+    color: #ff9900;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1em;
+    box-shadow: 0 5px 0 #ff9900;
+    display: inline-block;
+    transition: .3s;
+  }
+  .button12:hover {
+    color: #ff9900;
+    transform: translateY(5px);
+    box-shadow: 0 0 0 #ff9900;
+  }
+
+section {
+    text-align: center;
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1721866734 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1721866734 svg {
+    position: relative;
+    display: block;
+    width: calc(173% + 1.3px);
+    height: 202px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1721866734 .shape-fill {
+    fill: #AFDDE5;
+}
+
+/* ABOUT ---------------------------------------*/
+.about {
+    height: 200px;
+    padding-bottom: 80px;
+    background-color: #afdde5;
+}
+
+.about p {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* SERVICE ---------------------------------------*/
+.services {
+    height: 600px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 40px;
+    padding-top: 50px;
+
+}
+
+.services h3 {
+    padding-bottom: 20px;
+}
+
+.service-icon {
+    display: inline-block;
+    background-color:  #fff;
+    margin: 0px 30px 0px 30px;
+    padding: 50px 40px 50px 40px;
+    height: 100px;
+    width: 280px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* 背景ウェーブ */
+.custom-shape-divider-top-1723602429 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1723602429 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1723602429 .shape-fill {
+    fill: #FFFFFF;
+}
+/* ここまで */
+
+/* CONTACT ---------------------------------------*/
+.contact {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #afdde5;
+}
+
+.contact h2 {
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.contact p {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sns-btn {
+    display: flex;
+    margin-top: 30px;
+    list-style: none;
+    justify-content: center;
+}
+
+.sns-btn li {
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* FOOTER ---------------------------------------*/
+footer {
+    text-align: center;
+    height: 50px;
+}
+
+
+/* 制作実績 ---------------------------------------*/
+#work {
+    background-color: #afdde5;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+#work .page-title {
+    text-align: center;
+}
+
+.work-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* メイン部分 */
+article {
+    width:80%;
+    height: 3000px;
+    padding-right: 100px;
+}
+
+#website {
+    border-bottom: 1px #432 solid;
+}
+
+#lp {
+    padding-top: 50px;
+    border-bottom: 1px #432 solid;
+}
+
+#banner {
+    padding-top: 50px;
+    border-bottom: 1px #432 solid;
+}
+
+#graphic {
+    padding-top: 50px;
+    border-bottom: 1px #432 solid;
+}
+
+.work_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px #eef3f1 solid;
+}
+
+.work_box img {
+    width: 400px;
+    height: auto;
+    padding: 30px;
+}
+
+.work_box p {
+    width: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* サイドバー部分 */
+aside {
+    width: 18%;
+}
+
+.widget-sticky {
+    position: sticky;
+    top: 300px;
+    padding-left: 120px;
+}
+
+.sub-menu a {
+    color: #432;
+}
+
+.sub-menu {
+    padding:30px;
+    list-style-type:none;
+  }
+
+.sub-menu li {
+    position:relative;
+    padding: 0em 0.3em 0em 1.3em;
+    display: flex;
+    align-items: center;
+  }
+
+.sub-menu li::before,
+.sub-menu li::after {
+    position: absolute;
+    content: '';
+  }
+
+.sub-menu li::before {
+    top: .35em;
+    left: 0em;
+    width: 14px;
+    height: 14px;
+    background-color: #ff9900;
+    border-radius: 100%;
+  }
+
+.sub-menu li::after {
+    top: 0.6em;
+    left: 0.15em;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+  }
+
+  /* 自己紹介 ---------------------------------------*/
+.aboutme {
+    height: 600px;
+    background-color: #fff;
+}
+
+  .about_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about_box img {
+    width: 300px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.about_box p {
+    width: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.favorite {
+    text-align: left;
+    margin-left: 250px;
+}
+
+.favorite h3 {
+    color: #ff9900;
+}
+
+.skill {
+    text-align: left;
+    margin-left: 250px;
+}
+
+.skill h3 {
+    margin-top: 50px;
+    color: #ff9900;
+}
+
+.career {
+    text-align: left;
+    margin-left: 250px;
+    height: 500px;
+}
+
+.career h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #ff9900;
+}
+
+/* 背景ウェーブ */
+.custom-shape-divider-bottom-1724729379 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1724729379 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+}
+
+.custom-shape-divider-bottom-1724729379 .shape-fill {
+    fill: #AFDDE5;
+}
+/* ここまで */
+
+/* 経歴 */
+*{
+    margin:0;
+    padding:0;
+    line-height: 1.3em;
+  }
+
+  .time-schedule {
+    min-width: 400px;
+    max-width: 650px;
+    list-style: none;
+    margin: 0 auto 0 6em;
+    padding-left: 20px;
+    border-left: 6px solid #ff9900;
+    box-sizing: border-box;
+  }
+
+  .time-schedule li {
+    width: 100%;
+    margin: 0 0;
+    padding: 5px 0;
+    position: relative;
+  }
+
+  .time-schedule span.time {
+    width: 5em;
+    display: inline-block;
+    margin-left: -8em;
+    padding: 0 0 5px;
+    margin-top: 15px;
+    vertical-align: top;
+    position: relative;
+    text-align: right;
+    box-sizing: border-box;
+  }
+
+  .time-schedule span.time::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    top: 0;
+    background: #ff9900;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
+
+  .time-schedule .sch_box {
+    display: inline-block;
+    width: 100%;
+    margin-left: 30px;
+    padding: 15px 10px 15px 10px;
+    vertical-align: middle;
+    background: #efefef;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  .time-schedule .sch_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .time-schedule .sch_tx {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+/* お問い合わせ---------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.contact-page {
+    width: 960px;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 60px o;
+    background-color: #fff;
+}
+
+.contact-page p {
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-item,
+.contact-body {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-item {
+    text-align: left;
+    width: 30%;
+    background-color: #eee;
+}
+
+.contact-body {
+    width: 70%;
+}
+
+.form-text {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+
+.contact-q + .contact-q {
+    margin-left: 10px;
+}
+
+.contact-q-txt {
+    margin-left: 5px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-submit {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 100vh;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
