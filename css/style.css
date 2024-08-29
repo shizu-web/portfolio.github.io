@@ -21,20 +21,12 @@ img {
     position: sticky;
     z-index: 999;
     top: 0;
-    background-color: #fff;
-    margin: 0 calc(50% - 50vw);
-    width: 100vw;
+    background:rgba(255, 255, 255, 1);
+    background-size: cover;
     height: 80px;
-    padding: 10px;
 
     display: flex;
     justify-content: space-between;
-}
-
-.logo {
-    width: 100px;
-    height: 50px;
-    margin-left: 200px;
 }
 
 .main-nav {
@@ -42,7 +34,6 @@ img {
     font-size: 18px;
     text-transform: uppercase; /*大文字*/
     margin: 1em;
-    margin-right: 200px;
     list-style: none;
 }
 
@@ -62,29 +53,87 @@ img {
     width: 30px;
 }
 
+.wrapper {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
 
 /* メイン ---------------------------------------*/
 .top-wrapper {
     height: 500px;
     padding-bottom: 80px;
     background-color: #afdde5;
+    text-align: center;
+    position: relative;
 }
 
 .title-wrapper {
     height: 250px;
     padding-top: 50px;
     background-color: #AFDDE5;
+    text-align: center;
+    position: relative;
 }
 
 .page-title {
     font-size: 50px;
     color: #fff;
 }
+
+/* 背景ウェーブ */
+.custom-shape-divider-bottom-1724729379 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1724729379 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+}
+
+.custom-shape-divider-bottom-1724729379 .shape-fill {
+    fill: #AFDDE5;
+}
+
+.wave1 {
+    position: relative;
+} /* トップページ制作実績下 */
+
+.wave2 {
+    position: relative;
+    margin-top: 70px;
+} /* トップページお問い合わせ上 */
+
+.wave3 {
+    position: relative;
+} /* 制作実績ページお問い合わせ上 */
+
+.wave4 {
+    position: relative;
+    margin-top: 80px;
+} /* 自己紹介ページ中央 */
+
+.wave5 {
+    position: relative;
+    margin-top: 80px;
+} /* 自己紹介ページお問い合わせ上 */
+/* ここまで */
+
 /* WORK ---------------------------------------*/
 .work {
-    height: 850px;
     padding-bottom: 80px;
     background-color: #fff;
+    text-align: center;
+    position: relative;
 }
 
 .work h2 {
@@ -117,7 +166,7 @@ img {
 }
 
 .work_menu img:hover{
-    transform: scale(1.2) rotate(9deg);
+    transform: scale(1.3);
     transition-duration: 0.5s;
 }
 
@@ -139,37 +188,13 @@ img {
     box-shadow: 0 0 0 #ff9900;
   }
 
-section {
-    text-align: center;
-    position: relative;
-}
-
-.custom-shape-divider-bottom-1721866734 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1721866734 svg {
-    position: relative;
-    display: block;
-    width: calc(173% + 1.3px);
-    height: 202px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1721866734 .shape-fill {
-    fill: #AFDDE5;
-}
-
 /* ABOUT ---------------------------------------*/
 .about {
-    height: 200px;
+    height: auto;
     padding-bottom: 80px;
     background-color: #afdde5;
+    text-align: center;
+    position: relative;
 }
 
 .about p {
@@ -179,14 +204,14 @@ section {
 
 /* SERVICE ---------------------------------------*/
 .services {
-    height: 600px;
     background-color: #fff;
+    text-align: center;
+    position: relative;
 }
 
 .services h2 {
     font-size: 40px;
     padding-top: 50px;
-
 }
 
 .services h3 {
@@ -194,43 +219,23 @@ section {
 }
 
 .service-icon {
-    display: inline-block;
-    background-color:  #fff;
-    margin: 0px 30px 0px 30px;
-    padding: 50px 40px 50px 40px;
-    height: 100px;
-    width: 280px;
-    vertical-align: top;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* 背景ウェーブ */
-.custom-shape-divider-top-1723602429 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
+.services li {
+    list-style: none;
+    width: 60%;
+    margin: auto;
 
-.custom-shape-divider-top-1723602429 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
 }
-
-.custom-shape-divider-top-1723602429 .shape-fill {
-    fill: #FFFFFF;
-}
-/* ここまで */
 
 /* CONTACT ---------------------------------------*/
 .contact {
-    height: 500px;
     padding-bottom: 80px;
     background-color: #afdde5;
+    text-align: center;
+    position: relative;
 }
 
 .contact h2 {
@@ -262,18 +267,9 @@ footer {
     height: 50px;
 }
 
+/* トップページここまで -------------------------------------------------*/
 
-/* 制作実績 ---------------------------------------*/
-#work {
-    background-color: #afdde5;
-    height: 350px;
-    margin-bottom: 40px;
-}
-
-#work .page-title {
-    text-align: center;
-}
-
+/* 制作実績 -----------------------------------------------------------*/
 .work-contents {
     display: flex;
     justify-content: space-between;
@@ -283,8 +279,6 @@ footer {
 /* メイン部分 */
 article {
     width:80%;
-    height: 3000px;
-    padding-right: 100px;
 }
 
 #website {
@@ -314,13 +308,12 @@ article {
 }
 
 .work_box img {
-    width: 400px;
     height: auto;
     padding: 30px;
 }
 
 .work_box p {
-    width: 600px;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -333,7 +326,6 @@ aside {
 .widget-sticky {
     position: sticky;
     top: 300px;
-    padding-left: 120px;
 }
 
 .sub-menu a {
@@ -377,10 +369,11 @@ aside {
     transform: rotate(-45deg);
   }
 
-  /* 自己紹介 ---------------------------------------*/
+
+/* 自己紹介 -----------------------------------------------------------*/
 .aboutme {
-    height: 600px;
     background-color: #fff;
+    text-align: center;
 }
 
   .about_box {
@@ -390,13 +383,12 @@ aside {
 }
 
 .about_box img {
-    width: 300px;
+    width: 50%;
     height: auto;
-    margin-left: 40px;
 }
 
 .about_box p {
-    width: 600px;
+    width: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
     line-height: 1.7;
@@ -405,7 +397,8 @@ aside {
 
 .favorite {
     text-align: left;
-    margin-left: 250px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .favorite h3 {
@@ -414,7 +407,9 @@ aside {
 
 .skill {
     text-align: left;
-    margin-left: 250px;
+    width: 85%;
+    margin: 0 auto;
+
 }
 
 .skill h3 {
@@ -423,9 +418,8 @@ aside {
 }
 
 .career {
-    text-align: left;
-    margin-left: 250px;
-    height: 500px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .career h3 {
@@ -434,28 +428,7 @@ aside {
     color: #ff9900;
 }
 
-/* 背景ウェーブ */
-.custom-shape-divider-bottom-1724729379 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
 
-.custom-shape-divider-bottom-1724729379 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 52px;
-}
-
-.custom-shape-divider-bottom-1724729379 .shape-fill {
-    fill: #AFDDE5;
-}
-/* ここまで */
 
 /* 経歴 */
 *{
@@ -465,8 +438,7 @@ aside {
   }
 
   .time-schedule {
-    min-width: 400px;
-    max-width: 650px;
+    width: 85%;
     list-style: none;
     margin: 0 auto 0 6em;
     padding-left: 20px;
@@ -475,7 +447,7 @@ aside {
   }
 
   .time-schedule li {
-    width: 100%;
+    width: 85%;
     margin: 0 0;
     padding: 5px 0;
     position: relative;
@@ -525,14 +497,13 @@ aside {
     font-weight: normal;
   }
 
-/* お問い合わせ---------------------------------------*/
+
+/* お問い合わせ -----------------------------------------------------------*/
 * {
     box-sizing: border-box;
 }
 
 .contact-page {
-    width: 960px;
-    height: 1000px;
     margin: 0 auto;
     padding: 60px o;
     background-color: #fff;
@@ -540,13 +511,15 @@ aside {
 
 .contact-page p {
     font-weight: bold;
+    margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
 }
 
 .contact-table {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 85%;
+    margin-bottom: 20x;
+    margin: 0 auto;
 }
 
 .contact-item,
@@ -610,5 +583,71 @@ aside {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
+/* モバイル版--------------------------------------------------------- */
+@media (max-width:600px) {
+/* HEADER */
+.main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.main-nav li {
+    margin: 0 10px;
+}
+.page-header {
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+}
+
+
+/* WORK */
+.work ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_menu li {
+    width: 100%;
+}
+
+
+/* SERVICE */
+.service-icon {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* WORK PAGE */
+.work-contents {
+    flex-direction: column;
+}
+
+.work_box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.side_text {
+    width: 85%;
+}
+
+
+/* ABOUT PAGE */
+.about_box {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.about_box p {
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+}
